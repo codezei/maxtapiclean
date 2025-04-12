@@ -1,0 +1,30 @@
+doctype html
+block html
+  html(lang=lang)
+    head
+      block head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="theme-color" content=themeColor)
+        title= pageTitle
+        link(rel="icon", href="img/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/style.min.css")
+        meta(name="description", content="")
+        meta(name="robots", content="index, follow")
+        meta(property="og:title", content="")
+        meta(property="og:description", content="")
+        meta(property="og:type", content="website")
+        meta(property="og:url", content="")
+        meta(property="og:image", content="logo.png")
+        meta(name="twitter:card", content="summary_large_image")
+        meta(name="twitter:title", content="")
+        meta(name="twitter:description", content="")
+        meta(name="twitter:image", content="")
+        block fonts
+    body
+      block content
+      block scripts
+        script(src="js/gsap.min.js")
+        script(src="js/ScrollTrigger.min.js")
+        script(src="js/main.js")
